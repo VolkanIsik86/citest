@@ -4,6 +4,9 @@ node_js:
 cache:
   directories:
     - node_modules
+jobs:
+  exclude:
+    env: ISOLATED=true
 script:
   - npm run build
   - npm test
